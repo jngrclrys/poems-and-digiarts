@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+   }
+   .background {
+       background:  url('story.jpg');
+       background-size: cover ;
+       background-attachment: fixed;
+       background-position: center;
+       height: 170vh;
+       width: 100%;
+       padding: 0;
+   }
+   h1{
+    color: #0ef;
+    text-shadow: 0 0 15px #1f242d;
+    text-align: center;
+    position: absolute;
+    bottom: 85%;
+    left: 44%;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .2s ;
+   }
+   h1:hover{
+    transform: translateY(-10px);
+    color: #1f242d;
+}
+   .card{
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    border: 2px solid #0ef;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url('jabe.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    transition: transform 0.5;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+   }
+   .card1 {
+    background-image: url('jabe.jpg');
+    position: absolute;
+    right: 68%;
+    top: 25%;
+   }
+   .card2 {
+    background-image: url('2card.png');
+    position: absolute;
+    right: 38%;
+    top: 25%;
+   }
+   .card3 {
+    background-image: url('3card.jpg');
+    position: absolute;
+    right:10%;
+    top: 95%;
+   }
+
+   .card4 {
+    background-image: url('paradox.jpg');
+    position: absolute;
+    right: 10%;
+    top: 25%;
+   }
+   .card5 {
+    background-image: url('5card.jpg');
+    position: absolute;
+    right: 38%;
+    top: 95%;
+   }
+   .card6 {
+    background-image: url('6card.jpg');
+    position: absolute;
+    right: 68%;
+    top: 95%;
+   }
+   .card:hover{
+    transform: translateY(-10px);
+    color: #1f242d;
+    box-shadow: 0 0 20px rgb(156, 248, 255);
+    background: #0ef;
+   }
+   h3 {
+    text-shadow:  #0ef;
+    color: #1f242d;
+    text-align: center;
+    justify-items: center;
+   }
+   p {
+    text-shadow:  #000000;
+    color: #fff;
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+    top: 22%;
+    right: 0%;
+    position: absolute;
+   }
+
+   @keyframes slideRight {
+    0% {
+        transform: translateX (-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX (0);
+        opacity: 1;
+        
+    }
+}
+
+   @keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
